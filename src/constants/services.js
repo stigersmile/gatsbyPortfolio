@@ -1,23 +1,27 @@
 import React from "react"
 import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import { CgScreen } from "react-icons/cg"
 const services = [
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: ` Proficient in Web ( Javascript, Angular, React ) and GUI (.NET, QT) development language `,
+    text: ` Proficient in Web ( Javascript, Angular, React ) development language `,
+    tag: ["Javascript", "Angular", "React"],
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
+    icon: <CgScreen className="service-icon" />,
     title: "GUI development",
-    text: ` Passionate about UX, UI and good at building prototypes and quickly iterating UI design to meet the needs of different stakeholders.`,
+    text: `  Proficient in GUI (.NET, QT) development language.`,
+    tag: [".NET", "QT"],
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
+    icon: <FaSketch className="service-icon" />,
     title: "UI/UX",
-    text: `Passionate about UX, UI and good at building prototypes and quickly iterating UI design to meet the needs of different stakeholders.`,
+    text: `Proficient in (AdobeXD, Figma, Axure)`,
+    tag: ["AdobeXD", "Figma", "Axure"],
   },
 ]
 

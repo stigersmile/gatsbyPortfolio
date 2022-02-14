@@ -10,8 +10,8 @@
     "name": {
       "type": "string"
     },
-    "task": {
-      "type": "richtext"
+    "detail": {
+      "type": "json"
     }
   }
 }

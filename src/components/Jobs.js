@@ -1,6 +1,10 @@
 import React from "react"
 import Title from "./Title"
-import { FaAngleDoubleRight, FaLongArrowAltRight } from "react-icons/fa"
+import {
+  FaAngleDoubleRight,
+  FaKiwiBird,
+  FaLongArrowAltRight,
+} from "react-icons/fa"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
@@ -14,7 +18,9 @@ export const query = graphql`
         desc {
           id
           name
-          task
+          detail {
+            task
+          }
         }
       }
     }
@@ -62,6 +68,12 @@ const Jobs = () => {
               <div key={item.id} className="job-desc">
                 <FaAngleDoubleRight className="job-cion"></FaAngleDoubleRight>
                 <p>{item.name}</p>
+                <br />
+                <ul style={{ listStyle: "disc" }}>
+                  {item.detail.task.map(elm => {
+                    return <li>{elm}</li>
+                  })}
+                </ul>
               </div>
             )
           })}
