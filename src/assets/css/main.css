@@ -469,6 +469,8 @@ Hero
     grid-column: 1 / span 8;
   }
   .hero-img {
+    /* width:500px;
+    height: 100%; */
     display: block;
     grid-row: 1/1;
     grid-column: 7/-1;

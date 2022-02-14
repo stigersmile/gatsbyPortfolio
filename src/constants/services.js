@@ -5,19 +5,19 @@ const services = [
     id: 1,
     icon: <FaCode className="service-icon" />,
     title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    text: ` Proficient in Web ( Javascript, Angular, React ) and GUI (.NET, QT) development language `,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "GUI development",
+    text: ` Passionate about UX, UI and good at building prototypes and quickly iterating UI design to meet the needs of different stakeholders.`,
   },
   {
     id: 3,
     icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    title: "UI/UX",
+    text: `Passionate about UX, UI and good at building prototypes and quickly iterating UI design to meet the needs of different stakeholders.`,
   },
 ]
 

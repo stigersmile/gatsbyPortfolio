@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_description_stacj_items",
+  "info": {
+    "name": "stack_item",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

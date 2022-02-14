@@ -5,7 +5,36 @@ import socialLinks from "../constants/social_links"
 import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
-  return <h2>hero component</h2>
+  return (
+    <header className="hero">
+      <section className="section-center header-center">
+      <article className="hero-info">
+        <div>
+          <div className="underline"></div>
+          <h1>I'm Po Han</h1>
+          <h4>UI/UX Frontend engineer</h4>
+          <Link to="/contact" className="btn">
+            Contact me
+          </Link>
+          <div className="social-links">
+            {socialLinks.map((link)=>{
+              return <a href={link.url} key={link.id} className="social-link">
+                {link.icon}
+              </a>
+            })}
+          </div>
+        </div>
+      </article>
+        {/* <StaticImage
+        src ="../assets/images/hero.svg"
+        alt=""
+        className ="hero-img"
+        placeholder="blurred"
+        /> */}
+        {/* <img src={heroImg} alt="" className="hero-img"/> */}
+      </section>
+    </header>
+  )
 }
 
 export default Hero
