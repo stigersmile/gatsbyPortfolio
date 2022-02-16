@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Seo from "../../components/Seo"
+import Video from "../../components/video"
 
 const ProjectTemplate = ({ pageContext: { title }, data }) => {
   console.log(data)
@@ -26,6 +27,11 @@ const ProjectTemplate = ({ pageContext: { title }, data }) => {
           </article>
         )
       })}
+
+      {/* <Video
+        videoSrcURL=""
+        videoTitle=""
+      /> */}
     </main>
   )
 }

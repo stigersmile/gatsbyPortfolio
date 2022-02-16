@@ -26,14 +26,14 @@ const Hero = () => {
               })}
             </div>
           </div>
+          <StaticImage
+            className="hero-img"
+            src="../assets/images/hero.png"
+            alt="design program"
+            placeholder="blurred"
+            layout="constrained"
+          />
         </article>
-        {/* <StaticImage
-        src ="../assets/images/hero.svg"
-        alt=""
-        className ="hero-img"
-        placeholder="blurred"
-        /> */}
-        {/* <img src={heroImg} alt="" className="hero-img"/> */}
       </section>
     </header>
   )

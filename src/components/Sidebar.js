@@ -3,27 +3,30 @@ import links from "../constants/links"
 import socialLinks from "../constants/social_links"
 import { Link } from "gatsby"
 import { FaTimes } from "react-icons/fa"
-const Sidebar = ({isOpen,toggleSidebar}) => {
+const Sidebar = ({ isOpen, toggleSidebar }) => {
   // const isOpen = true;
-  return <aside className= {isOpen? "sidebar show-sidebar":"sidebar"}> 
-    <button className="close-btn" type="button" onClick={toggleSidebar}>
-      <FaTimes />
-    </button>
+  return (
+    <aside className={isOpen ? "sidebar show-sidebar" : "sidebar"}>
+      <button className="close-btn" type="button" onClick={toggleSidebar}>
+        <FaTimes />
+      </button>
       <div className="side-container">
-        <ul className={isOpen? "sidebar-links": null}>
-          {links.map(link=>{
-            return(
+        <ul className={isOpen ? "sidebar-links" : null}>
+          {links.map(link => {
+            return (
               <li key={link.id}>
-              <Link to ={link.url} onClick={toggleSidebar}>{link.text}</Link>
+                <Link to={link.url} onClick={toggleSidebar}>
+                  {link.text}
+                </Link>
               </li>
             )
           })}
         </ul>
-        <ul className={isOpen? "social-links sidebar-icons":null}>
-          {socialLinks.map(link=>{
-            return(
+        <ul className={isOpen ? "social-links sidebar-icons" : null}>
+          {socialLinks.map(link => {
+            return (
               <li key={link.id}>
-                <a href="{link.url}" className="social-link">
+                <a href={link.url} className="social-link">
                   {link.icon}
                 </a>
               </li>
@@ -31,8 +34,8 @@ const Sidebar = ({isOpen,toggleSidebar}) => {
           })}
         </ul>
       </div>
-   </aside>
-
+    </aside>
+  )
 }
 
 export default Sidebar

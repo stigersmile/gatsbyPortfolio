@@ -7,7 +7,7 @@ const services = [
     icon: <FaCode className="service-icon" />,
     title: "web development",
     text: ` Proficient in Web ( Javascript, Angular, React ) development language `,
-    tag: ["Javascript", "Angular", "React"],
+    tag: ["Javascript", "Typescript", "Angular", "React"],
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const services = [
     icon: <FaSketch className="service-icon" />,
     title: "UI/UX",
     text: `Proficient in (AdobeXD, Figma, Axure)`,
-    tag: ["AdobeXD", "Figma", "Axure"],
+    tag: ["Adobe XD", "Figma", "Axure"],
   },
 ]
 

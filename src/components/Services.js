@@ -7,18 +7,18 @@ const Services = () => {
       <Title title="skill" />
       <div className="section-center services-center">
         {services.map(service => {
-          const { id, icon, title, text } = service
+          const { id, icon, title, text, tag } = service
           return (
             <article key={id} className="service">
               {icon}
               <h4>{title}</h4>
               <div className="underline"></div>
-              <p>{text}</p>
+              {/* <p>{text}</p> */}
 
               <div className="project-stack">
-                {/* {stack.map((service["tag"]) => {
-                  return <span key={item.id}>{item}</span>
-                })} */}
+                {tag.map(item => {
+                  return <span key={id}>{item}</span>
+                })}
               </div>
             </article>
           )
