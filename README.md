@@ -2,12 +2,13 @@
 
 ## Overview
 
-The project aims to create a easy-modified portfolio and it allows user can easy maintain their jom information and project
+The project aims to create an easy-modified portfolio and it allows user can easy maintain their CV and project
 
 ## Framework
 
-The project use Gatsby, a React-based open source framework
-The bakcend use strapi, an open-source headless CMS
+The project uses Gatsby, a React-based open source framework.
+https://www.gatsbyjs.com/
+The bakcend uses Strapi, an open-source headless CMS.
 https://strapi.io/
 
 ## Setup Notes
